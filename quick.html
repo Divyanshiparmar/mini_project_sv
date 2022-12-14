@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+
+</head>
+
+<body>
+    <p>
+    <h1 class="head">QUICK SORT</h1>
+
+    <span class="main">QuickSort is a Divide and Conquer algorithm. It picks an element as a pivot and partitions the
+        given array around the picked pivot. There are many different versions of quickSort that pick pivot in different
+        ways.
+
+        Always pick the first element as a pivot.
+        Always pick the last element as a pivot (implemented below)
+        Pick a random element as a pivot. <br>
+        Pick median as the pivot. <br>
+        The key process in quickSort is a partition(). The target of partitions is, given an array and an element x of
+        an array as the pivot, put x at its correct position in a sorted array and put all smaller elements (smaller
+        than x) before x, and put all greater elements (greater than x) after x. All this should be done in linear
+        time.</span>
+
+    <p class="sub_head">Illustration of partition() : </p>
+    <p>Consider: arr[] = {10, 80, 30, 90, 40, 50, 70}
+
+        Indexes: 0 1 2 3 4 5 6
+        low = 0, high = 6, pivot = arr[h] = 70
+        Initialize index of smaller element, i = -1
+    </p>
+
+    <img src="quick1.jpg" alt="">
+    <p> Traverse elements from j = low to high-1
+        j = 0: Since arr[j] <= pivot, do i++ and swap(arr[i], arr[j]) i=0 arr[]={10, 80, 30, 90, 40, 50, 70} // No
+            change as i and j are same j=1: Since arr[j]> pivot, do nothing
+    </p>
+
+    <img src="quick2.jpg" alt="">
+
+    <p>
+        j = 2 : Since arr[j] <= pivot, do i++ and swap(arr[i], arr[j]) i=1 arr[]={10, 30, 80, 90, 40, 50, 70} // We swap
+            80 and 30 </p>
+
+
+            <img src="quick3.jpg" alt="">
+            <p>j = 3 : Since arr[j] > pivot, do nothing // No change in i and arr[]
+                j = 4 : Since arr[j] <= pivot, do i++ and swap(arr[i], arr[j]) i=2 arr[]={10, 30, 40, 90, 80, 50, 70} //
+                    80 and 40 Swapped</p>
+
+
+                    <img src="quick4.jpg" alt="">
+
+                    <p>j = 5 : Since arr[j] <= pivot, do i++ and swap arr[i] with arr[j] i=3 arr[]={10, 30, 40, 50, 80,
+                            90, 70} // 90 and 50 Swapped </p>
+
+                            <img src="quick5.jpg" alt="">
+
+                            <p>
+                                We come out of loop because j is now equal to high-1.
+                                Finally we place pivot at correct position by swapping arr[i+1] and arr[high] (or pivot)
+                                arr[] = {10, 30, 40, 50, 70, 90, 80} // 80 and 70 Swapped </p>
+
+
+                            <img src="quick6.jpg" alt="">
+
+                            <p>
+                                Now 70 is at its correct place. All elements smaller than 70 are before it and all
+                                elements greater than 70 are after it.
+                                Since quick sort is a recursive function, we call the partition function again at left
+                                and right partitions,</p>
+
+
+                            <img src="quick7.jpg" alt="">
+
+
+                            <p>Again call function at right part and swap 80 and 90</p>
+
+
+                            <img src="quick8.jpg" alt="">
+                    </p>
+
+                    <footer>
+                        <p class="footer">@2022-mini_project(Sorting visualizer) by Divyanshi</p>
+                    </footer>
+
+
+                    <style>
+                        * {
+                            font-family: cursive;
+                            text-align: center;
+                            color: cornsilk;
+                            background-color: #3b3a3a;
+
+                        }
+
+                        .sub_head {
+                            text-decoration: underline;
+                            font-weight: bold;
+                            font-size: 20px;
+                            padding: 10px;
+                            color: cornflowerblue;
+                        }
+
+                        .head {
+                            text-decoration: underline;
+                            color: cornflowerblue;
+
+                        }
+
+                        .main {
+                            margin: 15px;
+                            font-size: 18px;
+                        }
+
+                        .footer {
+                            font-size: 40px;
+                            text-align: center;
+                            text-decoration: underline;
+                            background-color: cornflowerblue;
+                            padding: 10px;
+                            color: cornsilk;
+                        }
+                    </style>
+</body>
+
+</html>

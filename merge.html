@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+
+</head>
+
+<body>
+    <p>
+    <h1 class="head">MERGE SORT</h1>
+
+    <span class="main">
+        The Merge Sort algorithm is a sorting algorithm that is based on the Divide and Conquer paradigm. In this
+        algorithm, the array is initially divided into two equal halves and then they are combined in a sorted manner.
+    </span>
+
+    <p class="sub_head"> How does Merge Sort Work?</p>
+
+    <p>lets consider an array arr[] = {38, 27, 43, 3, 9, 82, 10}
+
+        At first, check if the left index of array is less than the right index, if yes then calculate its mid point</p>
+
+    <img src="merge-1.jpg" alt="">
+
+
+
+    <p>Now, as we already know that merge sort first divides the whole array iteratively into equal halves, unless the
+        atomic values are achieved.
+        Here, we see that an array of 7 items is divided into two arrays of size 4 and 3 respectively.</p>
+
+    <img src="merge2.jpg" alt="">
+
+
+
+    <p>Now, again find that is left index is less than the right index for both arrays, if found yes, then again
+        calculate mid points for both the arrays.</p>
+
+    <img src="merge3.jpg" alt="">
+
+
+    <p>Now, further divide these two arrays into further halves, until the atomic units of the array is reached and
+        further division is not possible.</p>
+
+    <img src="merge4.jpg" alt="">
+
+    <p>
+        After dividing the array into smallest units, start merging the elements again based on comparison of size of
+        elements
+        Firstly, compare the element for each list and then combine them into another list in a sorted manner.</p>
+
+    <img src="merge5.jpg" alt="">
+
+
+
+    <p>After the final merging, the list looks like this:</p>
+
+    <img src="merge6.jpg" alt="">
+
+
+    </p>
+
+    <footer>
+        <p class="footer">@2022-mini_project(Sorting visualizer) by Divyanshi</p>
+    </footer>
+
+    <style>
+        * {
+            font-family: cursive;
+            text-align: center;
+            color: cornsilk;
+            background-color: #3b3a3a;
+
+        }
+
+        .sub_head {
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 10px;
+            color: cornflowerblue;
+        }
+
+        .head {
+            text-decoration: underline;
+            color: cornflowerblue;
+
+        }
+
+        .main {
+            margin: 15px;
+            font-size: 18px;
+        }
+
+        .footer {
+            font-size: 16px;
+            text-align: center;
+            text-decoration: underline;
+            background-color: cornflowerblue;
+            padding: 10px;
+            color: cornsilk;
+        }
+    </style>
+
+</body>
+
+</html>

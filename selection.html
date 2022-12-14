@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+
+</head>
+
+<body>
+    <p>
+    <h1 class="head">SELECTION SORT</h1>
+
+    <span class="main">
+        The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending
+        order) from the unsorted part and putting it at the beginning.
+
+        The algorithm maintains two subarrays in a given array.
+
+        The subarray which already sorted.
+        The remaining subarray was unsorted.
+        In every iteration of the selection sort, the minimum element (considering ascending order) from the unsorted
+        subarray is picked and moved to the sorted subarray.</span>
+
+    <p class="sub_head"> How does Selection Sort Work?</p>
+    Lets consider the following array as an example: arr[] = {64, 25, 12, 22, 11}
+
+    <p class="sub_head">First pass: </p>
+
+    For the first position in the sorted array, the whole array is traversed from index 0 to 4 sequentially. The
+    first position where 64 is stored presently, after traversing whole array it is clear that 11 is the lowest
+    value. <br>
+    64 25 12 22 11 <br>
+    Thus, replace 64 with 11. After one iteration 11, which happens to be the least value in the array, tends to
+    appear in the first position of the sorted list. <br>
+    11 25 12 22 64
+    <p class="sub_head"> Second Pass:</p>
+
+    For the second position, where 25 is present, again traverse the rest of the array in a sequential manner. <br>
+    11 25 12 22 64 <br>
+    After traversing, we found that 12 is the second lowest value in the array and it should appear at the second
+    place in the array, thus swap these values. <br>
+    11 12 25 22 64
+    <p class="sub_head"> Third Pass:</p>
+
+    Now, for third place, where 25 is present again traverse the rest of the array and find the third least value
+    present in the array. <br>
+    11 12 25 22 64 <br>
+    While traversing, 22 came out to be the third least value and it should appear at the third place in the array,
+    thus swap 22 with element present at third position. <br>
+    11 12 22 25 64
+    <p class="sub_head">Fourth pass: </p>
+
+    Similarly, for fourth position traverse the rest of the array and find the fourth least element in the array
+    As 25 is the 4th lowest value hence, it will place at the fourth position. <br>
+    11 12 22 25 64
+    <p class="sub_head">Fifth Pass: </p>
+
+    At last the largest value present in the array automatically get placed at the last position in the array
+    The resulted array is the sorted array. <br>
+    11 12 22 25 64
+    </p>
+    <footer>
+        <p class="footer">@2022-mini_project(Sorting visualizer) by Divyanshi</p>
+    </footer>
+
+    <style>
+        * {
+            font-family: cursive;
+            text-align: center;
+            color: cornsilk;
+            background-color: #3b3a3a;
+
+        }
+
+        .sub_head {
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 10px;
+            color: cornflowerblue;
+        }
+
+        .head {
+            text-decoration: underline;
+            color: cornflowerblue;
+
+        }
+
+        .main {
+            margin: 15px;
+            font-size: 18px;
+        }
+
+        .footer {
+            font-size: 16px;
+            text-align: center;
+            text-decoration: underline;
+            background-color: cornflowerblue;
+            padding: 10px;
+            color: cornsilk;
+        }
+    </style>
+
+</body>
+
+</html>

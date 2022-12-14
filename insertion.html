@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+</head>
+
+<body>
+    <p>
+    <h1 class="head">INSERTION SORT</h1>
+
+    <span class="main">
+        Insertion sort is a simple sorting algorithm that works similar to the way you sort playing cards in your hands.
+        The array is virtually split into a sorted and an unsorted part. <br> Values from the unsorted part are picked
+        and
+        placed at the correct position in the sorted part.
+
+        <p class="sub_head">Characteristics of Insertion Sort:</p>
+        This algorithm is one of the simplest algorithm with simple implementation
+        Basically, Insertion sort is efficient for small data values
+        Insertion sort is adaptive in nature, i.e. it is appropriate for data sets which are already partially sorted.
+    </span>
+    <p class="sub_head">Working of Insertion Sort algorithm:</p>
+
+    Consider an example: arr[]: {12, 11, 13, 5, 6}
+
+    <p class="sub_head">First Pass:</p>
+
+    Initially, the first two elements of the array are compared in insertion sort. <br>
+    12 11 13 5 6 <br>
+    Here, 12 is greater than 11 hence they are not in the ascending order and 12 is not at its correct position. <br>
+    Thus, swap 11 and 12. <br>
+    So, for now 11 is stored in a sorted sub-array. <br>
+    11 12 13 5 6
+    <p class="sub_head">Second Pass:</p>
+
+    Now, move to the next two elements and compare them <br>
+    11 12 13 5 6 <br>
+    Here, 13 is greater than 12, thus both elements seems to be in ascending order, hence, no swapping will occur. <br>
+    12 also stored in a sorted sub-array along with 11
+    <p class="sub_head">Third Pass:</p>
+
+    Now, two elements are present in the sorted sub-array which are 11 and 12 <br>
+    Moving forward to the next two elements which are 13 and 5 <br>
+    11 12 13 5 6 <br>
+    Both 5 and 13 are not present at their correct place so swap them <br>
+    11 12 5 13 6 <br>
+    After swapping, elements 12 and 5 are not sorted, thus swap again <br>
+    11 5 12 13 6 <br>
+    Here, again 11 and 5 are not sorted, hence swap again <br>
+    5 11 12 13 6 <br>
+    here, it is at its correct position
+    <p class="sub_head">Fourth Pass:</p>
+
+    Now, the elements which are present in the sorted sub-array are 5, 11 and 12 <br>
+    Moving to the next two elements 13 and 6 <br>
+    5 11 12 13 6 <br>
+    Clearly, they are not sorted, thus perform swap between both <br>
+    5 11 12 6 13 <br>
+    Now, 6 is smaller than 12, hence, swap again <br>
+    5 11 6 12 13 <br>
+    Here, also swapping makes 11 and 6 unsorted hence, swap again <br>
+    5 6 11 12 13 <br>
+    Finally, the array is completely sorted.
+    </p>
+    <footer>
+        <p class="footer">@2022-mini_project(Sorting visualizer) by Divyanshi</p>
+    </footer>
+
+    <style>
+        * {
+            font-family: cursive;
+            text-align: center;
+            color: cornsilk;
+            background-color: #3b3a3a;
+
+        }
+
+        .sub_head {
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 10px;
+            color: cornflowerblue;
+        }
+
+        .head {
+            text-decoration: underline;
+            color: cornflowerblue;
+
+        }
+
+        .main {
+            margin: 15px;
+            font-size: 18px;
+        }
+
+        .footer {
+            font-size: 16px;
+            text-align: center;
+            text-decoration: underline;
+            background-color: cornflowerblue;
+            padding: 10px;
+            color: cornsilk;
+        }
+    </style>
+</body>
+
+</html>

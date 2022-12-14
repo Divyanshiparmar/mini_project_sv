@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+
+</head>
+
+<body>
+    <p>
+    <h1 class="head">BUBBLE SORT</h1>
+    <span class="main">Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent
+        elements if they are
+        in the wrong order. This algorithm is not suitable for large data sets as its average and worst-case time
+        complexity is quite high.</span>
+    <h2 class="head">How does Bubble Sort Work?</h2>
+
+    <span class="input"> Input: arr[] = {5, 1, 4, 2, 8}</span>
+
+    <p class="sub_head"> First Pass:</p>
+
+    Bubble sort starts with very first two elements, comparing them to check which one is greater.<br>
+
+    ( 5 1 4 2 8 ) –> ( 1 5 4 2 8 ) <br>
+
+    Here, algorithm compares the first two elements. <br>
+    swaps since 5 > 1 <br>
+
+    ( 1 5 4 2 8 ) –> ( 1 4 5 2 8 ) <br>
+
+    Swap since 5 > 4 <br>
+
+    ( 1 4 5 2 8 ) –> ( 1 4 2 5 8 ) <br>
+
+    Swap since 5 > 2 <br>
+
+    ( 1 4 2 5 8 ) –> ( 1 4 2 5 8 ) <br>
+
+    Now, since these elements are already in order (8 > 5), algorithm does not swap
+    them.
+    <p class="sub_head"> Second Pass:</p>
+    Now, during second iteration it should look like this: <br>
+    ( 1 4 2 5 8 ) –> ( 1 4 2 5 8 ) <br>
+    ( 1 4 2 5 8 ) –> ( 1 2 4 5 8 ) <br> Swap since 4 > 2 <br>
+    ( 1 2 4 5 8 ) –> ( 1 2 4 5 8 ) <br>
+    ( 1 2 4 5 8 ) –> ( 1 2 4 5 8 ) <br>
+
+    <p class="sub_head"> Third Pass:</p>
+    Now, the array is already sorted, but our algorithm does not know if it is completed.
+    The algorithm needs one whole pass without any swap to know it is sorted. <br>
+    ( 1 2 4 5 8 ) –> ( 1 2 4 5 8 ) <br>
+    ( 1 2 4 5 8 ) –> ( 1 2 4 5 8 ) <br>
+    ( 1 2 4 5 8 ) –> ( 1 2 4 5 8 ) <br>
+    ( 1 2 4 5 8 ) –> ( 1 2 4 5 8 ) <br>
+    </p>
+    <footer>
+        <p class="footer">@2022-mini_project(Sorting visualizer) by Divyanshi</p>
+    </footer>
+
+    <style>
+        * {
+            font-family: cursive;
+            text-align: center;
+            color: cornsilk;
+            background-color: #3b3a3a;
+
+        }
+
+        .sub_head {
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 10px;
+            color: cornflowerblue;
+        }
+
+        .head {
+            text-decoration: underline;
+            color: cornflowerblue;
+
+        }
+
+        .main {
+            margin: 15px;
+            font-size: 18px;
+        }
+
+        .footer {
+            font-size: 18px;
+            text-align: center;
+            text-decoration: underline;
+            background-color: cornflowerblue;
+            padding: 10px;
+            color: cornsilk;
+        }
+    </style>
+</body>
+
+</html>
